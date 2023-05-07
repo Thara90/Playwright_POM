@@ -11,35 +11,5 @@
             "totalBalance" : 350,
             "creditAvailable" : 17800,
             "dueToday" : 180
-    },
-    "productivity": {
-        "productionWaterfall": [
-            {
-                "name": "Inpatient care",
-                "value": 28.8
-            },
-            {
-                "name": "non-clinical time",
-                "value": 2.5
-            },
-            {
-                "name": "management",
-                "value": 1
-            },
-            {
-                "name": "total",
-                "value": 32.3
-            }
-        ],
-        "competenceWaterfall": [
-            {
-                "name": "SPEC",
-                "value": 1
-            },
-            {
-                "name": "RN++",
-                "value": 1.4
-            }
-        ]
     }
 }
