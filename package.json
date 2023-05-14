@@ -9,6 +9,6 @@
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "@playwright/test": "^1.31.2"
+    "@playwright/test": "^1.33.0"
   }
 }
