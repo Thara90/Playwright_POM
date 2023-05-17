@@ -1,0 +1,40 @@
+name: Playwright Tests
+ 
+variables:
+  CI: true
+
+schedules:
+  - cron: '30 2 * * *'
+    displayName: Daily 8 AM build in GMT+5:30 timezone
+    branches:
+      include:
+      - master
+      
+jobs:
+  - job: Agent_job
+    timeoutInMinutes: 60
+    pool:
+      vmImage: "windows-latest"
+ 
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node"
+ 
+      - script: |
+          npm i
+        displayName: "Install dependencies"
+ 
+      - script: |
+          npx playwright install
+        displayName: "Install Playwright"
+ 
+      - script: |
+          npx playwright test production_inpatientplan_charts.spec.ts --project chromium --headed
+        displayName: "Run Playwright tests"
+
+      - publish: $(System.DefaultWorkingDirectory)/playwright-report
+        artifact: playwright-report
+        # always create the artifact, this is useful for debugging failed tests
+        condition: always()
