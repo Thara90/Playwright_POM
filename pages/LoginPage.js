@@ -21,6 +21,7 @@ exports.LoginPage = class LoginPage {
     async AssertLoggedInUserDetails(userDetails) {
         var role = await this.lblRole.textContent();
         var role = role.trim();
+        await this.lblName.screenshot({path:'partialScreenshot.png'});
         await expect(this.lblName).toContainText(userDetails.name);
         await expect(this.lblRole).toContainText(role);
 

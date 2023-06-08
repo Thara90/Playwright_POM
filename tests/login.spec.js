@@ -10,6 +10,12 @@ test.describe('Login Test Suite', () => {
         await loginPage.AssertLoggedInUserDetails(testData.user);
     });
 
+    /*test('Logint visual comparison', async ({ loginPage }) => {
+        await loginPage.GotoLoginPage();
+        await loginPage.Login(testData.user.username, testData.user.password);
+        await loginPage.AssertLoggedInUserDetails(testData.user);
+    });*/
+
     test.afterAll(async ({ page }) => {
         await page.close();
     });
