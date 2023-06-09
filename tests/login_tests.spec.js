@@ -10,7 +10,7 @@ test.describe('Login Test Suite', () => {
         await loginPage.AssertLoggedInUserDetails(testData.user);
     });
 
-    test.only('Landing page visual comparison', async ({ page, loginPage }) => {
+    test('Landing page visual comparison', async ({ page, loginPage }) => {
         await loginPage.GotoLoginPage();
         await expect(page).toHaveScreenshot('landing.png');
     });
