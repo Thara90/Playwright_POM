@@ -1,2 +1,2 @@
 # Playwright_POM
-page object model to playwright
+* Landing page visual comparison test case initially fail
