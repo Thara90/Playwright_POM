@@ -22,7 +22,7 @@ exports.LoginPage = class LoginPage {
         await expect.soft(this.btnSignIn).toBeHidden();
     }
     async AssertLoggedInUserDetails(userDetails) {
-        await this.lblName.screenshot({path:'partialScreenshot.png'});
+        await this.lblName.screenshot({path:'Screenshots/partialScreenshot.png'});
         await expect(this.lblName).toContainText(userDetails.name);
         await expect(this.lblRole).toContainText(userDetails.role);
 
