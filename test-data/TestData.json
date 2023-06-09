@@ -3,7 +3,7 @@
         "username": "JackG",
         "password": "jack@123",
         "name": "Jack Gomez",
-        "role": "CUSTOMER"
+        "role": "Customer"
     },
     "financialDetails": {
         "totalBalance": 350,
