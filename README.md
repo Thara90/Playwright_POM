@@ -1,2 +1,7 @@
 # Playwright_POM
-* Landing page visual comparison test case initially fail
+
+## Insallation
+ * **npm init playwright@latest** : install latest version of playwright 
+ * **npm playwright -v** : playwright version
+
+## Execution
