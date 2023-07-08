@@ -11,6 +11,7 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
+  globalSetup: 'utils/globalSetup.js',
   testDir: './tests',
 
   /* Maximum time one test can run for. */

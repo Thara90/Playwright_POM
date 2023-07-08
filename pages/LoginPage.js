@@ -11,8 +11,8 @@ exports.LoginPage = class LoginPage {
         this.lblName = page.locator(`//div[@class='logged-user-name']`);
         this.lblRole = page.locator(`//div[@class='logged-user-role']`);
     }
-    async GotoLoginPage() {
-        await this.page.goto('https://demo.applitools.com/index.html');
+    async GotoLoginPage(web_url) {
+        await this.page.goto(web_url);
     }
     async Login(username, password) {
         await expect.soft(this.lblLoginFrom).toBeVisible();
