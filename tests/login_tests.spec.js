@@ -1,6 +1,6 @@
 
 const { test,expect } = require('../base/base.js');
-const testData = JSON.parse(JSON.stringify(require('../test-data/TestData.json')));
+const testData = JSON.parse(JSON.stringify(require('../test-data/qa/testData.json')));
 
 test.describe('Login Test Suite', () => {
 
