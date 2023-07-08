@@ -11,7 +11,7 @@ test.describe('Login Test Suite', () => {
         await loginPage.GotoLoginPage(process.env.WEB_URL);
     });
 
-    test.only('Logint with valid credentials', async ({ loginPage }) => {
+    test('Logint with valid credentials', async ({ loginPage }) => {
         await loginPage.Login(process.env.username, process.env.password);
         await loginPage.AssertLoggedInUserDetails(testData.user);
     });
