@@ -28,7 +28,7 @@ jobs:
  
       - script: |
           npx playwright install
-        displayName: "Install Playwright"
+        displayName: "Install Playwright Browsers"
  
       - script: |
           npx playwright test production_inpatientplan_charts.spec.ts --project chromium --headed
