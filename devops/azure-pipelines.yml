@@ -1,7 +1,9 @@
 name: Playwright Tests
  
-variables:
-  CI: true
+trigger:
+  branches:
+    include:
+      - master
 
 schedules:
   - cron: '30 2 * * *'
