@@ -1,7 +1,9 @@
 name: Playwright Tests
  
-variables:
-  CI: true
+trigger:
+  branches:
+    include:
+      - master
 
 schedules:
   - cron: '30 2 * * *'
@@ -28,7 +30,7 @@ jobs:
  
       - script: |
           npx playwright install
-        displayName: "Install Playwright"
+        displayName: "Install Playwright Browsers"
  
       - script: |
           npx playwright test production_inpatientplan_charts.spec.ts --project chromium --headed
