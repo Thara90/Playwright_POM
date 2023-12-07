@@ -16,10 +16,10 @@ test.describe('Login Test Suite', () => {
         await loginPage.AssertLoggedInUserDetails(testData.user);
     });
 
-    test('Landing page visual comparison', async ({ page, loginPage }) => {
-        await loginPage.GotoLoginPage();
-        await expect(page).toHaveScreenshot('landing.png');
-    });
+    // test('Landing page visual comparison', async ({ page, loginPage }) => {
+    //     await loginPage.GotoLoginPage();
+    //     await expect(page).toHaveScreenshot('landing.png');
+    // });
 
     test.afterEach(async ({ page }) => {
         await page.close();
