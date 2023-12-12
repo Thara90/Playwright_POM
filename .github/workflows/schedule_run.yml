@@ -1,7 +1,7 @@
 name: Nightly build at 11pm
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 21 * * *'
     
 jobs:
   test:
