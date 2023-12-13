@@ -1,7 +1,11 @@
 name: Nightly build at 9pm
 on:
-  schedule:
-    - cron: '0 21 * * *'
+  push:
+    branches: [ master ]
+    
+# on:
+#   schedule:
+#     - cron: '0 21 * * *'
     
 jobs:
   test:
