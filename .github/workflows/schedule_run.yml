@@ -1,4 +1,4 @@
-name: Nightly build at 11pm
+name: Nightly build at 9pm
 on:
   schedule:
     - cron: '0 21 * * *'
